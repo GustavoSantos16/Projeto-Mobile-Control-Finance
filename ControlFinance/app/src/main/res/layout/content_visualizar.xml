@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.senaijandira.controlfinance.VisualizarActivity"
+    tools:showIn="@layout/activity_visualizar"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/verdinho"
+        android:id="@+id/cor_linear"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="5,00"
+            android:textSize="40sp"
+            android:textAlignment="center"
+            android:id="@+id/txt_valor"
+            android:textColor="#ffffff"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alimentação"
+        android:textSize="25sp"
+        android:id="@+id/txt_categoria"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data:"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10/10/2018"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/txt_data"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição:"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asdsdadasdsdasa"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/txt_descricao"/>
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+        
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:text="EDITAR"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/btn_editar"
+            android:onClick="editar"
+            android:backgroundTint="@color/verdinho"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:text="excluir"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/btn_excluir"
+            android:onClick="excluir"
+            android:backgroundTint="@color/colorAccent"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.senaijandira.controlfinance.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@color/verdinho"
+        android:orientation="vertical"
+        android:id="@+id/bg_saldo"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Saldo"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:paddingTop="30dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="29sp"
+            android:textColor="#ffffff"
+            android:id="@+id/txt_saldo"
+
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver todos os Lançamentos"
+        android:backgroundTint="@color/verdinho"
+        android:textColor="#ffffff"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btn_lancamento"
+        android:onClick="telaLancamentos"
+        />
+
+    <ListView
+        android:id="@+id/list_view_lancamentos"
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        android:padding="10dp">
+
+    </ListView>
+
+
+</LinearLayout>

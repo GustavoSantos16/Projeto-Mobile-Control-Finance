@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.senaijandira.controlfinance.InserirActivity"
+    tools:showIn="@layout/activity_receita_despesa"
+    android:orientation="vertical"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="R$00,00"
+        android:background="@color/verdinho"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:textAlignment="viewEnd"
+        android:textSize="30sp"
+        android:inputType="numberDecimal"
+        android:id="@+id/txt_lancamento"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo de Lançamento:"
+            android:textSize="20sp"
+            />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receita"
+                android:id="@+id/rb_receita"
+                android:layout_marginRight="30dp"
+                android:onClick="corReceita"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Despesa"
+                android:id="@+id/rb_despesa"
+                android:onClick="corDespesa"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descrição:"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:maxLength="25"
+            android:id="@+id/txt_descricao"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data:"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:maxLength="10"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/txt_data"
+            />
+			
+		<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categoria:"
+            android:textSize="20sp"
+            />
+			
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categorias ficam aqui"
+            android:id="@+id/sp_categorias"
+            android:layout_marginBottom="10dp"
+            />
+
+        
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Salvar"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:background="@color/verdinho"
+            android:id="@+id/btn_salvar"
+            android:layout_marginTop="20dp"
+            android:onClick="salvar"
+            />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

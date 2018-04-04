@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.senaijandira.controlfinance.SobreActivity"
+    tools:showIn="@layout/activity_sobre">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="O Aplicativo Control Finance foi criado por Gustavo dos Santos,aluno do Curso Técnico de Informática para ajudar com gastos e despesas dos mais variados tipos, Projeto desenvolvido na escola Senai Jandira, sem fins lucrativos."
+        android:textSize="20sp"
+        android:padding="20dp"/>
+
+</ScrollView>
+</LinearLayout>

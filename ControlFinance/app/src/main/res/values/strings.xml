@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Control Finance</string>
+    <string name="action_settings">Sobre o app</string>
+    <string name="title_activity_receita_despesa">Inserir Lançamento</string>
+    <string name="title_activity_lancamento">Todos os Lançamentos</string>
+    <string name="title_activity_visualizar">Visualizar Lançamento</string>
+    <string name="title_activity_home">Control Finance</string>
+    <string name="title_activity_sobre">Sobre o app</string>
+</resources>
